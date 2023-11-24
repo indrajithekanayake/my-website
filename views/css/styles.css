@@ -1,0 +1,73 @@
+.read-more-target {
+  display: none;
+  transition: 0.25s ease;
+}
+
+.read-more-trigger {
+  color: #0000ff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+}
+
+body{
+  height: 100%;
+  text-align: justify;
+  margin: 10px auto;
+  padding: 0 10px;
+  padding-bottom: 80px;
+  font-family: "Poppins";
+  background-color: #acddde;
+}
+
+hr {
+  height: 2px;
+  background-color: #000;
+  border: none; /* removes the default border */
+}
+
+
+#content {
+  max-width: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
+}
+
+@media (min-width: 601px) {
+  #content {
+    margin-left: calc((100% - 600px) / 2);
+    margin-right: 0;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #efefef;
+  text-align: center;
+  /* No extra padding is necessary for the fixed-position button */
+  z-index: 5; /* Make sure this is less than the z-index of the button */
+}
+
+.scroll-to-top {
+  position: fixed; /* Fixed like the footer, but will scroll with the page */
+  right: 20px; /* Position from the right of the screen */
+  bottom: 20px; /* Position from the bottom of the screen */
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10; /* Ensure it stays on top of other content */
+}
+
+.scroll-to-top:hover {
+  background-color: #e2e6ea;
+}
+
+
+
